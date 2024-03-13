@@ -28,19 +28,5 @@ fun publish() {
             )
         }
         .join() // block current thread until complete
-    client.actions()
-        .story()
-        .uploadPhoto(genStoryImage("${getLunch()}"))
-        .thenAccept {
-            println(
-                """
-                    --------------------------
-                   "Successfully uploaded story!" 
-                    --------------------------
-                """.trimIndent()
-            )
-        }
-        .join() // block current thread until complete
-    exitProcess(0)
 }
 

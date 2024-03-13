@@ -8,7 +8,5 @@ import kotlin.system.exitProcess
 
 
 fun main()  {
-
-    genStoryImage("${getLunch()}")
     genTimelineImage("${getLunch()}")
 }
